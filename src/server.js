@@ -20,9 +20,9 @@ app.use(
 app.use(cors());
 app.use(notesRoutes);
 
-app.get('/test-error', (req, res) => {
-  throw new Error('Simulated server error');
-});
+// app.get('/test-error', (req, res) => {
+//   throw new Error('Simulated server error');
+// });
 
 app.use(notFoundHandler);
 app.use(errorHandler);
